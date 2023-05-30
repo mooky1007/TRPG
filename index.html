@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4e94b66e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/common.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>TRPG</title>
+</head>
+<body>
+    <aside class="side_bar">
+        <div class="user_name">
+            <span class="level">Lv. <strong>0</strong></span>
+            <span class="job">직업</span>
+            <span class="name">사용자 이름</span>
+        </div>
+        <hr>
+        <div class="goods_area">
+            <div class="goods_block" title="Gold">
+                <img src="./src/images/gold.png" alt="">
+                <span class="goods_point">0</span>
+                <span class="goods_title">Gold</span>
+            </div>
+            <!-- <div class="goods_block">
+                <span>Ruby</span>
+                <span>0</span>
+            </div> -->
+            <div class="goods_block" title="Action Point">
+                <img src="./src/images/stat.png" alt="">
+                <span class="goods_point">0</span>
+                <span class="goods_title">AP</span>
+            </div>
+        </div>
+        <hr>
+        <div class="menu_area">
+            <ul>
+                <li class="active"><a href="#">케릭터</a></li>
+                <li><a href="#">탐사</a></li>
+                <li><a href="#">상업지구</a></li>
+                <li><a href="#">신전</a></li>
+            </ul>
+        </div>
+    </aside>
+    <section data-content="character" class="content_area active">
+        <ul class="sub_menus button_wrap">
+            <li>
+                <button class="btn active">상세</button>
+            </li>
+            <li>
+                <button class="btn">장비</button>
+            </li>
+            <li>
+                <button class="btn">스킬</button>
+            </li>
+            <li>
+                <button class="btn">가방</button>
+            </li>
+        </ul>
+        <div class="character_detail">
+            <div class="row">
+                <img src="./src/images/hp.png" alt="">
+                <span>HP :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/mp.png" alt="">
+                <span>MP :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/exp.png" alt="">
+                <span>EXP :</span>
+                <span><span>0</span> / <span>100</span></span>
+            </div>
+            <div class="row">
+                <img src="./src/images/dmg.png" alt="">
+                <span>물리 데미지 :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/def.png" alt="">
+                <span>물리 방어력 :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/mDmg.png" alt="">
+                <span>마법 데미지 :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/mDef.png" alt="">
+                <span>마법 방어력 :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/ar.png" alt="">
+                <span>명중률 :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/av.png" alt="">
+                <span>회피율 :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/cr.png" alt="">
+                <span>치명타율 :</span>
+                <span>0</span>%
+            </div>
+            <div class="row">
+                <img src="./src/images/cd.png" alt="">
+                <span>치명타 데미지 : </span>
+                <span>0</span>%
+            </div>
+            <div class="row">
+                <img src="./src/images/ts.png" alt="">
+                <span>공격 속도 : </span>
+                <span>0</span>ms
+            </div>
+        </div>
+        <div class="character_stat">
+            <div class="row">
+                <img src="./src/images/str.png" alt="">
+                <span>STR :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/conn.png" alt="">
+                <span>CON :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/int.png" alt="">
+                <span>INT :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/wis.png" alt="">
+                <span>WIS :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/dex.png" alt="">
+                <span>DEX :</span>
+                <span>0</span>
+            </div>
+            <div class="row">
+                <img src="./src/images/spd.png" alt="">
+                <span>SPD :</span>
+                <span>0</span>
+            </div>
+        </div>
+    </section>
+    <section data-content="explore" class="content_area">
+        탐사
+    </section>
+    <section data-content="commercial" class="content_area">
+        상업지구
+    </section>
+    <section data-content="temple" class="content_area">
+        신전
+    </section>
+</body>
+</html>
