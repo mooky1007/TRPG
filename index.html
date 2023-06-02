@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e4e94b66e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/css/reset.css">
+    <script src="https://kit.fontawesome.com/e4e94b66e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/css/common.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>TRPG</title>
+    <script>
+        //크롬 주소창 안접히게
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                window.scrollTo(0, 1);
+            }, 0);
+        });
+    </script>
 </head>
+
 <body>
     <aside class="side_bar">
         <div class="user_name">
@@ -47,112 +57,168 @@
     <section data-content="character" class="content_area active">
         <ul class="sub_menus button_wrap">
             <li>
-                <button class="btn active">상세</button>
+                <button class="btn active" data-sub-content="detail">상세</button>
             </li>
             <li>
-                <button class="btn">장비</button>
+                <button class="btn" data-sub-content="equip">장비</button>
             </li>
             <li>
-                <button class="btn">스킬</button>
+                <button class="btn" data-sub-content="skill">스킬</button>
             </li>
             <li>
-                <button class="btn">가방</button>
+                <button class="btn" data-sub-content="inventory">가방</button>
             </li>
         </ul>
-        <div class="character_detail">
-            <div class="row">
-                <img src="./src/images/hp.png" alt="">
-                <span>HP :</span>
-                <span>0</span>
+        <section data-sub-content="detail" class="content_sub_area active">
+            <div class="character_detail">
+                <div class="row">
+                    <img src="./src/images/hp.png" alt="">
+                    <span>HP</span>
+                    <span>50</span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/mp.png" alt="">
+                    <span>MP</span>
+                    <span>20</span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/exp.png" alt="">
+                    <span>EXP</span>
+                    <span><span>0</span> / <span>100</span></span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/dmg.png" alt="">
+                    <span>물리 데미지</span>
+                    <span>10</span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/def.png" alt="">
+                    <span>물리 방어력</span>
+                    <span>0</span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/mDmg.png" alt="">
+                    <span>마법 데미지</span>
+                    <span>0</span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/mDef.png" alt="">
+                    <span>마법 방어력</span>
+                    <span>0</span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/ar.png" alt="">
+                    <span>명중률</span>
+                    <span>50</span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/av.png" alt="">
+                    <span>회피율</span>
+                    <span>0</span>
+                </div>
+                <div class="row">
+                    <img src="./src/images/cr.png" alt="">
+                    <span>치명타율</span>
+                    <span>10</span>%
+                </div>
+                <div class="row">
+                    <img src="./src/images/cd.png" alt="">
+                    <span>치명타 데미지</span>
+                    <span>150</span>%
+                </div>
+                <div class="row">
+                    <img src="./src/images/ts.png" alt="">
+                    <span>공격 속도</span>
+                    <span>1000</span>ms
+                </div>
             </div>
-            <div class="row">
-                <img src="./src/images/mp.png" alt="">
-                <span>MP :</span>
-                <span>0</span>
+            <div class="character_stat">
+                <div class="row">
+                    <img src="./src/images/str.png" alt="">
+                    <span>근력 <span class="en_name">STR</span></span>
+                    <div class="btn_wrap">
+                        <span>5 <span>( +1 )</span></span>
+                        
+                        <button>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./src/images/conn.png" alt="">
+                    <span>체력 <span class="en_name">CON</span></span>
+                    <div class="btn_wrap">
+                        <span>5</span>
+                        <button>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./src/images/int.png" alt="">
+                    <span>지능 <span class="en_name">INT</span></span>
+                    <div class="btn_wrap">
+                        <span>5</span>
+                        <button>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./src/images/wis.png" alt="">
+                    <span>지혜 <span class="en_name">WIS</span></span>
+                    <div class="btn_wrap">
+                        <span>5</span>
+                        <button>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./src/images/dex.png" alt="">
+                    <span>민첩 <span class="en_name">DEX</span></span>
+                    <div class="btn_wrap">
+                        <span>5</span>
+                        <button>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./src/images/spd.png" alt="">
+                    <span>속도 <span class="en_name">SPD</span></span>
+                    <div class="btn_wrap">
+                        <span>5</span>
+                        <button>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row stat_apply_btn_wrap">
+                    <span>잔여 스탯 포인트</span>
+                    <span>0</span>
+                </div>
+                <!-- <div class="row stat_apply_btn_wrap">
+                    <div class="btnwrap">
+                        <button>
+                            <span>스탯 적용</span>
+                        </button>
+                        <button>
+                            <span>취소</span>
+                        </button>
+                    </div>
+                </div> -->
             </div>
-            <div class="row">
-                <img src="./src/images/exp.png" alt="">
-                <span>EXP :</span>
-                <span><span>0</span> / <span>100</span></span>
-            </div>
-            <div class="row">
-                <img src="./src/images/dmg.png" alt="">
-                <span>물리 데미지 :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/def.png" alt="">
-                <span>물리 방어력 :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/mDmg.png" alt="">
-                <span>마법 데미지 :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/mDef.png" alt="">
-                <span>마법 방어력 :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/ar.png" alt="">
-                <span>명중률 :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/av.png" alt="">
-                <span>회피율 :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/cr.png" alt="">
-                <span>치명타율 :</span>
-                <span>0</span>%
-            </div>
-            <div class="row">
-                <img src="./src/images/cd.png" alt="">
-                <span>치명타 데미지 : </span>
-                <span>0</span>%
-            </div>
-            <div class="row">
-                <img src="./src/images/ts.png" alt="">
-                <span>공격 속도 : </span>
-                <span>0</span>ms
-            </div>
-        </div>
-        <div class="character_stat">
-            <div class="row">
-                <img src="./src/images/str.png" alt="">
-                <span>STR :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/conn.png" alt="">
-                <span>CON :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/int.png" alt="">
-                <span>INT :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/wis.png" alt="">
-                <span>WIS :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/dex.png" alt="">
-                <span>DEX :</span>
-                <span>0</span>
-            </div>
-            <div class="row">
-                <img src="./src/images/spd.png" alt="">
-                <span>SPD :</span>
-                <span>0</span>
-            </div>
-        </div>
+        </section>
+        <section data-sub-content="equip" class="content_sub_area">
+            장비
+        </section>
+        <section data-sub-content="skill" class="content_sub_area">
+            스킬
+        </section>
+        <section data-sub-content="inventory" class="content_sub_area">
+            가방
+        </section>
     </section>
     <section data-content="explore" class="content_area">
         탐사
@@ -163,5 +229,20 @@
     <section data-content="temple" class="content_area">
         신전
     </section>
+
+    <script>
+        document.querySelectorAll('.sub_menus.button_wrap .btn').forEach(el => {
+            el.addEventListener("click", () => {
+                document.querySelectorAll('.sub_menus.button_wrap .btn').forEach(el => {
+                    el.classList.remove('active')
+                })
+                el.classList.add('active')
+                document.querySelectorAll('.content_sub_area').forEach(el => {
+                    el.classList.remove('active')
+                })
+                document.querySelector(`.content_sub_area[data-sub-content="${el.dataset.subContent}"]`).classList.add('active')
+            })
+        })
+    </script>
 </body>
 </html>

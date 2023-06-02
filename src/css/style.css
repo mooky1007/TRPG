@@ -70,6 +70,11 @@ hr {
 
 .content_area.active {display: block;}
 
+.content_sub_area {display: none;}
+
+.content_sub_area.active {display: block;}
+
+
 .sub_menus {
     display: flex;
 }
@@ -84,6 +89,66 @@ hr {
 
 .character_stat {
     border-bottom: none;
+}
+
+.btn_wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.btn_wrap.apply {
+    max-width: 300px;
+    margin-left: 0;
+    justify-content: flex-end;
+}
+
+.stat_apply_btn_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat_apply_btn_wrap .btnwrap {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.character_stat .en_name {
+    font-size: 12px;
+    color: #999;
+}
+
+.stat_apply_btn_wrap button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    font-size: 14px;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.character_stat .btn_wrap > span {
+    margin-right: 10px;
+}
+
+.character_stat .btn_wrap button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    cursor: pointer;
 }
 
 .character_detail .row,
@@ -144,7 +209,7 @@ hr {
     }
 
     .menu_area {
-        position: absolute;
+        position: fixed;
         width: 100%;
         padding: 0;
         bottom: 0;
