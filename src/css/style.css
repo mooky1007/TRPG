@@ -83,7 +83,6 @@ hr {
 .character_stat {
     max-width: 300px;
     padding: 20px 0;
-    margin-bottom: 20px;
     border-bottom: 1px solid #111;
 }
 
@@ -116,7 +115,8 @@ hr {
     align-items: center;
 }
 
-.character_stat .en_name {
+.en_name {
+    margin-left: 5px;
     font-size: 12px;
     color: #999;
 }
@@ -172,6 +172,80 @@ hr {
 
 .character_detail .row:last-child, .character_stat .row:last-child{margin-bottom: 0;}
 
+.detail_area,
+.equip_stat_area {
+    max-width: 400px;
+    padding: 20px 0;
+    border-bottom: 1px solid #111;
+}
+
+.detail_item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.detail_item span:first-of-type{
+    width: 60px;
+}
+
+.detail_item button[role="action"] {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.skill_area {
+    max-width: 500px;
+}
+
+.skill_area .detail_item span:first-child{
+    width: 120px;
+}
+
+.inventory_area {
+    max-width: 500px;
+}
+
+.inventory_area .detail_item span:first-child{
+    width: 120px;
+}
+
+
+.equip_stat_area p {
+    margin-bottom: 20px;
+}
+
+.equip_stat_area li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.equip_stat_area li span:first-of-type {
+    margin-right: auto;
+}
+
+.equip_stat_area li span:first-of-type > span {
+    font-size: 12px;
+    color: #999;
+    margin-left: 5px;
+}
+
+.good_word {
+    color: #38ca6b;
+}
+
+.bad_word {
+    color: #ca3838;
+}
 
 @media screen and (max-width: 768px) {
     .side_bar {

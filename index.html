@@ -57,19 +57,19 @@
     <section data-content="character" class="content_area active">
         <ul class="sub_menus button_wrap">
             <li>
-                <button class="btn active" data-sub-content="detail">상세</button>
+                <button class="btn" data-sub-content="detail">상세</button>
             </li>
             <li>
                 <button class="btn" data-sub-content="equip">장비</button>
             </li>
             <li>
-                <button class="btn" data-sub-content="skill">스킬</button>
+                <button class="btn active" data-sub-content="skill">스킬</button>
             </li>
             <li>
                 <button class="btn" data-sub-content="inventory">가방</button>
             </li>
         </ul>
-        <section data-sub-content="detail" class="content_sub_area active">
+        <section data-sub-content="detail" class="content_sub_area">
             <div class="character_detail">
                 <div class="row">
                     <img src="./src/images/hp.png" alt="">
@@ -211,13 +211,130 @@
             </div>
         </section>
         <section data-sub-content="equip" class="content_sub_area">
-            장비
+            <div class="detail_area equip_area">
+                <div class="detail_item equip_item">
+                    <span>무기</span>
+                    <span>단검</span>
+                    <button type="button" role="action">[해제]</button>
+                </div>
+                <div class="detail_item equip_item">
+                    <span>보조</span>
+                    <span>-</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+                <div class="detail_item equip_item">
+                    <span>머리</span>
+                    <span>-</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+                <div class="detail_item equip_item">
+                    <span>갑옷</span>
+                    <span>-</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+                <div class="detail_item equip_item">
+                    <span>장갑</span>
+                    <span>-</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+                <div class="detail_item equip_item">
+                    <span>신발</span>
+                    <span>-</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+                <div class="detail_item equip_item">
+                    <span>반지</span>
+                    <span>-</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+                <div class="detail_item equip_item">
+                    <span>반지</span>
+                    <span>-</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+                <div class="detail_item equip_item">
+                    <span>목걸이</span>
+                    <span>-</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+            </div>
+            <div class="equip_stat_area">
+                <p>장비 아이템으로 얻은 능력치 총합</p>
+                <ul>
+                    <li>
+                        <span>HP</span>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <span>MP</span>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <span>물리 공격력<span>DMG</span></span>
+                        <span class="good_word">4</span>
+                    </li>
+                    <li>
+                        <span>마법 공격력<span>MDMG</span></span>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <span>물리 방어력<span>DEF</span></span>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <span>마법 방어력<span>MDEF</span></span>
+                        <span>0</span>
+                    </li>
+                    <li>
+                        <span>명중률<span>AR</span></span>
+                        <span>0</span>%
+                    </li>
+                    <li>
+                        <span>회피율<span>AV</span></span>
+                        <span>0</span>%
+                    </li>
+                    <li>
+                        <span>치명타율<span>CR</span></span>
+                        <span class="good_word">2</span>%
+                    </li>
+                    <li>
+                        <span>치명타 데미지<span>CD</span></span>
+                        <span>0</span>%
+                    </li>
+                    <li>
+                        <span>공격속도<span>TS</span></span>
+                        <span class="good_word">100</span>ms
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section data-sub-content="skill" class="content_sub_area">
-            스킬
+        <section data-sub-content="skill" class="content_sub_area active">
+            <div class="skill_area detail_area">
+                <div class="detail_item">
+                    <span>체력단련<span class="en_name">Passive</span></span>
+                    <span>STR +3, CON +2</span>
+                    <button type="button" role="action">[사용]</button>
+                </div>
+                <div class="detail_item">
+                    <span>강타<span class="en_name">Active</span></span>
+                    <span>물리 공격력 150%</span>
+                    <button type="button" role="action">[해제]</button>
+                </div>
+            </div>
         </section>
         <section data-sub-content="inventory" class="content_sub_area">
-            가방
+            <div class="inventory_area detail_area">
+                <div class="detail_item">
+                    <span>나무조각<span class="en_name">ETC</span></span>
+                    <span>흔히 볼 수 있는 나무조각</span>
+                    <button type="button" role="action">3</button>
+                </div>
+                <div class="detail_item">
+                    <span>단검<span class="en_name">Weapon</span></span>
+                    <span>물리 공격력 +5, 명중률 +5</span>
+                    <button type="button" role="action">[장착]</button>
+                </div>
+            </div>
         </section>
     </section>
     <section data-content="explore" class="content_area">
